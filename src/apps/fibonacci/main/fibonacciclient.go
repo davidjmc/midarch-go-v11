@@ -11,8 +11,8 @@ import (
 
 func main(){
 
-	// HOST_NAMING, SAMPLE_SIZE
 	// start configuration
+	// NAMING_HOST, REQUEST_TIME, SAMPLE_SIZE
 	EE.ExecutionEnvironment{}.Deploy("MiddlewareFibonacciClient.conf")
 
 	// proxy to naming service
