@@ -1,0 +1,20 @@
+datatype PROCNAMES = e1 | e2 | e3 | e4 | client | server
+channel I_PosInvP1, I_PosInvP2, I_PosInvP, I_Process, I_Pos1, I_Pos2
+channel InvP,InvR,TerR,TerP : PROCNAMES
+B = InvP.e1 -> I_PosInvP1 -> TerP.e1 -> B [] InvP.e2 -> I_PosInvP2 -> TerP.e2 -> B
+B2 = InvP.e1 -> (I_Pos1 -> TerP.e1 -> B2 [] I_Pos2 -> TerP.e2 -> B2)
+B4 = InvP.e1 -> (InvR.e2 -> TerP.e1 -> B4 [] InvR.e3 -> TerP.e1 -> B4)
+B1 = InvP.e1 -> I_Process -> TerP.e1 -> B1
+
+B3 = InvP.e1 -> InvR.e4 -> TerR.e4 -> TerP.e1 -> B3 [] InvP.e2 -> InvR.e4 -> TerR.e4 -> TerP.e2 -> B3 [] InvP.e3 -> InvR.e4 -> TerR.e4 -> TerP.e3 -> B3
+NTo1 = InvP.e1 -> InvR.e4 -> NTo1 [] InvP.e2 -> InvR.e4 -> NTo1 [] InvP.e3 -> InvR.e4 -> NTo1 
+
+ONEWAY = InvR.e1 -> InvR.e2 -> ONEWAY
+ONETON = InvP.e1 -> InvR.e2 -> InvR.e3 -> InvR.e4 -> ONETON
+CLIENT = InvR.e1 -> TerR.e1 -> CLIENT
+REQUESTREPLY = InvP.e1 -> InvR.e2 -> TerR.e2 -> TerP.e1 -> REQUESTREPLY
+SERVER = InvP.e1 -> I_Process -> TerP.e1 -> SERVER
+
+P = (CLIENT ||| SERVER) 
+[|{|InvR,TerR,InvP,TerP|}|]
+(REQUESTREPLY[[InvP.e1 <- InvR.e1,InvR.e2 <- InvP.e1,TerR.e2 <- TerP.e1,TerP.e1 <-TerR.e1]])
