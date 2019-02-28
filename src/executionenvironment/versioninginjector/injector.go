@@ -57,19 +57,17 @@ func InjectAdaptiveEvolution(elementName string) {
 		for {
 			switch currentPlugin {
 			case 1:
-				fmt.Println("Plugin 01 -> Plugin 02")
 				currentPlugin = 2
 				pluginName := strings.TrimSpace(pluginBase02 + "_plugin_v1")
-				fmt.Println(parameters.DIR_GO+"/go", "build", "-buildmode=plugin", "-o", parameters.DIR_PLUGINS+"/"+pluginName, parameters.DIR_PLUGINS+"/"+pluginBase01+"/"+sourceCode01)
-				_, err := exec.Command(parameters.DIR_GO+"/go", "build", "-buildmode=plugin", "-o", parameters.DIR_PLUGINS+"/"+pluginName, parameters.DIR_PLUGINS+"/"+pluginBase01+"/"+sourceCode01).CombinedOutput()
+				_, err := exec.Command(parameters.DIR_GO+"/go", "build", "-buildmode=plugin", "-o", parameters.DIR_PLUGINS+"/"+pluginName, parameters.DIR_PLUGINS+"/"+pluginBase02+"/"+sourceCode02).CombinedOutput()
 				if err != nil {
 					fmt.Println("Shared:: Something wrong in generating plugin '" + pluginName + "'")
 					os.Stderr.WriteString(err.Error())
 				}
 			case 2:
 				currentPlugin = 1
-				pluginName := strings.TrimSpace(pluginBase01 + "_plugin_v2")
-				_, err := exec.Command(parameters.DIR_GO+"/go", "build", "-buildmode=plugin", "-o", parameters.DIR_PLUGINS+"/"+pluginName, parameters.DIR_PLUGINS+"/"+pluginBase02+"/"+sourceCode02).CombinedOutput()
+				pluginName := strings.TrimSpace(pluginBase01 + "_plugin_v1")
+				_, err := exec.Command(parameters.DIR_GO+"/go", "build", "-buildmode=plugin", "-o", parameters.DIR_PLUGINS+"/"+pluginName, parameters.DIR_PLUGINS+"/"+pluginBase01+"/"+sourceCode01).CombinedOutput()
 				if err != nil {
 					fmt.Println("Shared:: Something wrong in generating plugin '" + pluginName + "'")
 					os.Stderr.WriteString(err.Error())
