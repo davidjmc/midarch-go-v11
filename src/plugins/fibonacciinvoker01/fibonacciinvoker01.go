@@ -18,6 +18,7 @@ func GetBehaviourExp() string {
 	//return libraries.BehaviourLibrary[calculatorinvoker.CalculatorInvoker{}]
 	return "B = InvP.e1 -> I_PosInvP -> TerP.e1 -> B"
 }
+
 func (FibonacciInvoker) I_PosInvP(msg *messages.SAMessage) {
 	op := msg.Payload.(messages.MIOP).Body.RequestHeader.Operation
 

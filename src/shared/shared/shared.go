@@ -11,9 +11,8 @@ import (
 	"os"
 )
 
+// CSP operators
 const PREFIX_ACTION = "->"
-
-//const CHOICE = "[]"
 const PREFIX_INTERNAL_ACTION = "I_"
 const INVP = "InvP"
 const TERP = "TerP"
@@ -228,17 +227,6 @@ func IsInConnectors(conns map[string]string, t string) bool {
 	return foundConnector
 }
 
-/*func RenameInternalChannels(b string, id string) string {
-	tokens := strings.Split(b, " ")
-
-	for t := range tokens {
-		if IsInternal(tokens[t]) {
-			b = strings.Replace(b, tokens[t], tokens[t]+"_"+id, 99)
-		}
-	}
-	return b
-}
-*/
 type QueueingInvocation struct {
 	Op   string
 	Args []interface{}
