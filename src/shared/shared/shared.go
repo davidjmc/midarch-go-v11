@@ -151,26 +151,26 @@ func LoadParameters(args []string) {
 	}
 }
 
-func ShowExecutionParameters(s bool) {
-	if s {
-		fmt.Println("******************************************")
+func ShowExecutionParameters(needToShow bool) {
+	if needToShow {
+		fmt.Println("***************************************************************************************************")
 		fmt.Println("Sample size                : " + strconv.Itoa(parameters.SAMPLE_SIZE))
-		fmt.Println("Direrctory of base code    : " + parameters.BASE_DIR)
+		fmt.Println("Direrctory of base code    : " + parameters.DIR_BASE)
 		fmt.Println("Directory of plugins       : " + parameters.DIR_PLUGINS)
 		fmt.Println("Directory of CSP specs     : " + parameters.DIR_CSP)
 		fmt.Println("Directory of Configurations: " + parameters.DIR_CONF)
 		fmt.Println("Directory of Go compiler   : " + parameters.DIR_GO)
 		fmt.Println("Directory of FDR           : " + parameters.DIR_FDR)
-		fmt.Println("------------------------------------------")
+		fmt.Println("---------------------------------------------------------------------------------------------------")
 		fmt.Println("Naming Host     : " + parameters.NAMING_HOST)
 		fmt.Println("Naming Port     : " + strconv.Itoa(parameters.NAMING_PORT))
 		fmt.Println("Calculator Port : " + strconv.Itoa(parameters.CALCULATOR_PORT))
 		fmt.Println("Fibonacci Port  : " + strconv.Itoa(parameters.FIBONACCI_PORT))
 		fmt.Println("Queueing Port   : " + strconv.Itoa(parameters.QUEUEING_PORT))
-		fmt.Println("------------------------------------------")
+		fmt.Println("---------------------------------------------------------------------------------------------------")
 		fmt.Println("Plugin Base Name: " + parameters.PLUGIN_BASE_NAME)
 		fmt.Println("Max Graph Size  : " + strconv.Itoa(parameters.GRAPH_SIZE))
-		fmt.Println("------------------------------------------")
+		fmt.Println("---------------------------------------------------------------------------------------------------")
 		fmt.Println("Adaptability  ")
 		fmt.Println("Corrective        : " + strconv.FormatBool(parameters.IS_CORRECTIVE))
 		fmt.Println("Evolutive         : " + strconv.FormatBool(parameters.IS_EVOLUTIVE))
@@ -179,7 +179,7 @@ func ShowExecutionParameters(s bool) {
 		fmt.Println("Injection Time (s): " + (parameters.INJECTION_TIME * time.Second).String())
 		fmt.Println("Request Time (ms) : " + parameters.REQUEST_TIME.String())
 		fmt.Println("Strategy (0-NOT DEFINED 1-No change 2-Change once 3-change same plugin 4-alternate plugins): " + strconv.Itoa(parameters.STRATEGY))
-		fmt.Println("******************************************")
+		fmt.Println("***************************************************************************************************")
 	}
 }
 

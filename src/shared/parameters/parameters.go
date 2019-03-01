@@ -3,15 +3,15 @@ package parameters
 import "time"
 
 // Dirs
-//const BASE_DIR  = "/go/midarch-go"  // docker
-const BASE_DIR = "/Users/nsr/Dropbox/go/midarch-go-v11"
-const DIR_PLUGINS = BASE_DIR + "/src/plugins"
-const DIR_CSP = BASE_DIR + "/src/cspspecs"
-const DIR_SOURCE = BASE_DIR
-const DIR_CONF = BASE_DIR + "/src/apps/confs"
+//const DIR_BASE  = "/go/midarch-go"  // docker
+const DIR_BASE = "/Users/nsr/Dropbox/go/midarch-go-v11"
+const DIR_PLUGINS = DIR_BASE + "/src/plugins"
+const DIR_CSP = DIR_BASE + "/src/cspspecs"
+const DIR_SOURCE = DIR_BASE
+const DIR_CONF = DIR_BASE + "/src/apps/confs"
 const DIR_GO = "/usr/local/go/bin"
 const DIR_FDR = "/Volumes/Macintosh HD/Applications/FDR4-2.app/Contents/MacOS"
-const DIR_CSPARSER = BASE_DIR+"/src/verificationtools/cspdot/csparser"
+const DIR_CSPARSER = DIR_BASE+"/src/verificationtools/cspdot/csparser"
 const COMPONENTS_PATH = "components"
 const CONNECTORS_PATH = "connectors"
 const NAMINGCLIENTPROXY_PATH = "namingclientproxy"
