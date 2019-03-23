@@ -1,7 +1,7 @@
 package main
 
 import (
-	"framework/messages"
+	"midarch-go-v11/src/framework/messages"
 	"strconv"
 	"time"
 )
@@ -26,6 +26,7 @@ func (Sender) I_PreInvR1(msg *messages.SAMessage, r *bool) {
 	idx1++
 
 	*r = true
+
 	return
 }
 

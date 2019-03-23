@@ -1,14 +1,14 @@
 package adaptationmanager
 
 import (
-	"time"
-	"strings"
-	"os"
 	"io/ioutil"
-	"shared/shared"
-	"shared/parameters"
-	"shared/errors"
 	"framework/configuration/configuration"
+	"shared/errors"
+	"shared/parameters"
+	"shared/shared"
+	"os"
+	"strings"
+	"time"
 )
 
 type Monitor struct{}
@@ -47,8 +47,26 @@ func MonitorCorrective(chanInMonitoredCorrective chan shared.MonitoredCorrective
 	// TODO
 }
 
-func MonitorProactive(chanInMonitoredCorrective chan shared.MonitoredProactiveData) {
+func MonitorProactive(chanInMonitoredProactive chan shared.MonitoredProactiveData) {
 	// TODO
+
+
+
+	for {
+
+		var jsonStr = []byte(`{
+							"modelFileName" : "marshaller.prism",
+							"propertiesFileName" : "marshaller.pctl",
+							"attributes" : [ 
+								"rate_arrive : 0.9",
+								"queue_size : 10"
+							]}`)
+
+		chanInMonitoredProactive <- jsonStr
+
+		time.Sleep(parameters.MONITOR_TIME * time.Second)
+	}
+
 }
 
 func MonitorEvolutive(chanInMonitoredEvolutive chan shared.MonitoredEvolutiveData) {

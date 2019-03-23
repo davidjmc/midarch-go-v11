@@ -1,7 +1,7 @@
 package main
 
 import (
-	"framework/messages"
+	"midarch-go-v11/src/framework/messages"
 	"strconv"
 	"time"
 )

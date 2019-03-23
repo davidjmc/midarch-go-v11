@@ -1,15 +1,16 @@
 package adaptationmanager
 
 import (
-	"reflect"
-	"framework/element"
-	"plugin"
-	"strings"
-	"shared/shared"
-	"framework/configuration/configuration"
-	"shared/parameters"
+	"fmt"
 	"framework/configuration/commands"
+	"framework/configuration/configuration"
+	"framework/element"
 	"shared/errors"
+	"shared/parameters"
+	"shared/shared"
+	"plugin"
+	"reflect"
+	"strings"
 )
 
 type Planner struct{}
@@ -22,9 +23,47 @@ func (Planner) Exec(conf configuration.Configuration, chanAP chan shared.Analysi
 		case parameters.EVOLUTIVE_CHANGE:
 			plan := generateEvolutivePlan(conf, analysisResult)
 			chanPE <- plan // send plan to Executor
+		case parameters.PROACTIVE_CHANGE:
+			plan := generateProactivePlan(conf, analysisResult)
+			chanPE <- plan
 		default:
 		}
 	}
+}
+
+func generateProactivePlan (conf configuration.Configuration, analysisResult shared.AnalysisResult) commands.Plan {
+
+	fmt.Println("Generate Proactive")
+
+	// build new plan from analysis result
+	plan := commands.Plan{}
+	cmds := []commands.HighLevelCommand{}
+
+	//newPlugins := reflect.ValueOf(analysisResult.Result)
+
+	var newPlugins [1]string
+
+	newPlugins[0] = "sender01_plugin_v1"
+
+	fmt.Println(len(newPlugins))
+
+	for i := 0; i < len(newPlugins); i++ {
+		pluginName := newPlugins[i]
+		fy := loadPlugin(pluginName, "GetBehaviourExp")
+		fz := loadPlugin(pluginName, "GetTypeElem")
+
+		getBehaviourExp := fy.(func() string)
+		getTypeElem := fz.(func() interface{})
+
+		idNewElement := defineOldElement(conf, getTypeElem()) // TODO This is critical and needs to be improved in the future
+		//newElem := element.Element{Id: idNewElement, Behaviour: element.Element{}.BehaviourExec, TypeElem: getTypeElem(), BehaviourExp: getBehaviourExp()}
+		newElem := element.Element{Id: idNewElement, TypeElem: getTypeElem(), CSP: getBehaviourExp()}
+		cmd := commands.HighLevelCommand{commands.REPLACE_COMPONENT, newElem}
+		cmds = append(cmds, cmd)
+	}
+	plan.Cmds = cmds
+
+	return plan
 }
 
 func generateEvolutivePlan(conf configuration.Configuration, analysisResult shared.AnalysisResult) commands.Plan {
@@ -32,6 +71,8 @@ func generateEvolutivePlan(conf configuration.Configuration, analysisResult shar
 	// build new plan from analysis result
 	plan := commands.Plan{}
 	cmds := []commands.HighLevelCommand{}
+
+	fmt.Println(analysisResult.Result)
 
 	newPlugins := reflect.ValueOf(analysisResult.Result)
 	for i := 0; i < newPlugins.Len(); i++ {

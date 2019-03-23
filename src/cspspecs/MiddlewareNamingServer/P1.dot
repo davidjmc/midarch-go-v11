@@ -1,0 +1,9 @@
+digraph P1 {
+0 -> 1 [ label="I_PreInvR" ];
+1 -> 2 [ label="InvR.t1" ];
+2 -> 3 [ label="InvP.t1" ];
+3 -> 4 [ label="I_PosInvP" ];
+4 -> 5 [ label="TerP.t1" ];
+5 -> 6 [ label="TerR.t1" ];
+6 -> 0 [ label="I_PosTerR" ];
+}

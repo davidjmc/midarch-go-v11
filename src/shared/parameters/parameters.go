@@ -4,19 +4,20 @@ import "time"
 
 // Dirs
 //const DIR_BASE  = "/go/midarch-go"  // docker
-const DIR_BASE = "/Users/nsr/Dropbox/go/midarch-go-v11"
+const DIR_BASE = "/home/david/go/src/midarch-go-v11"
 const DIR_PLUGINS = DIR_BASE + "/src/plugins"
 const DIR_CSP = DIR_BASE + "/src/cspspecs"
 const DIR_SOURCE = DIR_BASE
 const DIR_CONF = DIR_BASE + "/src/apps/confs"
 const DIR_GO = "/usr/local/go/bin"
-const DIR_FDR = "/Volumes/Macintosh HD/Applications/FDR4-2.app/Contents/MacOS"
+const DIR_FDR = "/usr/local/fdr/bin"
 const DIR_CSPARSER = DIR_BASE+"/src/verificationtools/cspdot/csparser"
 const COMPONENTS_PATH = "components"
 const CONNECTORS_PATH = "connectors"
 const NAMINGCLIENTPROXY_PATH = "namingclientproxy"
 const COMPONENTS_DIR = "components"
 const CONNECTORS_DIR = "connectors"
+const CSPARSER = "/home/david/parser"
 
 const ADL_COMMENT = "//"
 
@@ -45,7 +46,8 @@ const CHAN_BUFFER_SIZE = 1
 const QUEUE_SIZE = 100
 
 //const PLUGIN_BASE_NAME  = "calculatorinvoker"
-const PLUGIN_BASE_NAME = "sender"
+//const PLUGIN_BASE_NAME = "sender"
+const PLUGIN_BASE_NAME = "fibonacciinvoker"
 const GRAPH_SIZE = 30
 
 const MAX_NUMBER_OF_ACTIVE_CONSUMERS = 10

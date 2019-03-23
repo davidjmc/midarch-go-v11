@@ -1,21 +1,21 @@
 package fdr
 
 import (
-	"strings"
-	"strconv"
-	"os"
-	"framework/element"
-	"os/exec"
-	"framework/configuration/configuration"
-	"shared/shared"
-	"shared/parameters"
-	"shared/errors"
-	"framework/configuration/commands"
-	"graph/fdrgraph"
-	"log"
 	"bufio"
+	"log"
+	"framework/configuration/commands"
+	"framework/configuration/configuration"
+	"framework/element"
 	"framework/libraries"
+	"graph/fdrgraph"
+	"shared/errors"
+	"shared/parameters"
+	"shared/shared"
+	"os"
+	"os/exec"
 	"reflect"
+	"strconv"
+	"strings"
 )
 
 type FDR struct{}
@@ -27,6 +27,20 @@ func (FDR) CheckBehaviour(conf configuration.Configuration) bool {
 	r := invokeFDR(conf)
 
 	return r
+}
+
+func (FDR) GenerateFDRGraphs(conf configuration.Configuration) {
+	cmdExp := parameters.CSPARSER + "/CSParser.jar"
+	dirFile := parameters.DIR_CSP + "/" + strings.Replace(conf.Id, ".confs", "", 99)
+	fileName := conf.Id + ".csp"
+	inputFile := dirFile + "/" + fileName
+
+	_, err := exec.Command(commands.JAVA_COMMAND, commands.JAR_COMMAND, cmdExp, inputFile).Output()
+	if err != nil {
+		myError := errors.MyError{Source: "CSPARSER", Message: ".dot Files not created"}
+		myError.ERROR()
+	}
+
 }
 
 func (FDR) LoadFDRGraphs(conf *configuration.Configuration) {
@@ -156,9 +170,19 @@ func createCSP(conf configuration.Configuration) string {
 	processesExp, componentProcesses, _ := createProcessExp(conf)
 	generalBehaviour := createGeneralBehaviourExp(&conf, externalChannels, componentProcesses)
 
+	// elements assertion
+	elementsAssertions := ""
+	for comp := range conf.Components {
+		elementsAssertions += "assert " + strings.ToUpper(comp) + " :[deadlock free]" + "\n"
+	}
+
+	for conn := range conf.Connectors {
+		elementsAssertions += "assert " + strings.ToUpper(conn) + " :[deadlock free]" + "\n"
+	}
+
 	// assertion
 	assertion := "assert P1 :[deadlock free]"
-	csp := dataTypeExp + "\n" + internalChannelsExp + "\n" + externalChannelsExp + "\n" + processesExp + "\n" + generalBehaviour + "\n" + assertion
+	csp := dataTypeExp + "\n" + internalChannelsExp + "\n" + externalChannelsExp + "\n" + processesExp + "\n" + generalBehaviour + "\n" + elementsAssertions + "\n" + assertion
 
 	return csp
 }

@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e495c5ca-9f9e-4c41-816a-90fd737d4160" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/apps/confs/MiddlewareFibonacciServer.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/confs/MiddlewareFibonacciServer.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/confs/SenderReceiver.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/confs/SenderReceiver.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/senderreceiver/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/senderreceiver/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/CRH.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/CRH.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/FIBONACCIPROXY.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/FIBONACCIPROXY.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/MiddlewareFibonacciClient.csp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/MiddlewareFibonacciClient.csp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/NAMINGPROXY.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/NAMINGPROXY.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/REQUESTOR.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/REQUESTOR.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/T1.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/T1.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/T2.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciClient/T2.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/CRH.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/CRH.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/FIBONACCIINVOKER.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/FIBONACCIINVOKER.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/MiddlewareFibonacciServer.csp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/MiddlewareFibonacciServer.csp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/NAMINGPROXY.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/NAMINGPROXY.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/REQUESTOR.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/REQUESTOR.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/SRH.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/SRH.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/T1.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/T1.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/T2.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/T2.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/T3.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareFibonacciServer/T3.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareNamingServer/MiddlewareNamingServer.csp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareNamingServer/MiddlewareNamingServer.csp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareNamingServer/NAMINGINVOKER.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareNamingServer/NAMINGINVOKER.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareNamingServer/SRH.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareNamingServer/SRH.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/MiddlewareNamingServer/T1.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/MiddlewareNamingServer/T1.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/SenderReceiver/RECEIVER.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/SenderReceiver/SENDER.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/SenderReceiver/SenderReceiver.csp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cspspecs/SenderReceiver/SenderReceiver.csp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cspspecs/SenderReceiver/T1.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/analyser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/analyser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/monitor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/monitor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/planner.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/planner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/executionenvironment/executionenvironment/executionenvironment.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/executionenvironment/executionenvironment/executionenvironment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/configuration/commands/commands.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/configuration/commands/commands.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/libraries/library.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/libraries/library.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/sender01/sender01.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/sender01/sender01.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/sender02/sender02.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/sender02/sender02.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/sender02_plugin_v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/parameters/parameters.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/parameters/parameters.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/shared/shared.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/shared/shared.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/goRPC/http/fibonacciclient.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/goRPC/http/fibonacciclient.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/verificationtools/fdr/fdr.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/verificationtools/fdr/fdr.go" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="728287625">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.34" value="2" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.opened" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="compileproto" value="1" />
+          <entry key="conf" value="9" />
+          <entry key="csp" value="2" />
+          <entry key="dot" value="14" />
+          <entry key="go" value="235" />
+          <entry key="proto" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Go" value="235" />
+          <entry key="PLAIN_TEXT" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="conf" value="96" />
+          <entry key="dot" value="6" />
+          <entry key="go" value="2592" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Go" value="2592" />
+          <entry key="PLAIN_TEXT" value="102" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.go.postfix.template.usages.trigger">
+        <counts>
+          <entry key=".len" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/transport/myRPC/services/naming/namingserver.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#14#122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/apps/fibonacci/main/fibonacciclient.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/transport/goRPC/http/fibonacciserver.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/transport/goRPC/http/fibonacciclient.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="e#14#112#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/shared/shared.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3600">
+              <caret line="249" selection-start-line="249" selection-end-line="249" />
+              <folding>
+                <element signature="e#16#123#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/transport/grpc/fibonacci/compileproto">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/transport/grpc/fibonacci/server/server.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/apps/fibonacci/main/fibonacciserver.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>loadPlugin</find>
+      <find>Plugin Name</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/apps/confs/SenderReceiver.conf" />
+        <option value="$PROJECT_DIR$/src/plugins/sender02/sender02.go" />
+        <option value="$PROJECT_DIR$/src/apps/confs/MiddlewareFibonacciServer.conf" />
+        <option value="$PROJECT_DIR$/src/transport/myRPC/services/naming/namingserver.go" />
+        <option value="$PROJECT_DIR$/src/shared/parameters/parameters.go" />
+        <option value="$PROJECT_DIR$/src/apps/fibonacci/main/fibonacciserver.go" />
+        <option value="$PROJECT_DIR$/src/shared/shared/shared.go" />
+        <option value="$PROJECT_DIR$/src/framework/element/element.go" />
+        <option value="$PROJECT_DIR$/src/executionenvironment/executionenvironment/executionenvironment.go" />
+        <option value="$PROJECT_DIR$/src/executionenvironment/executionunit/executionunit.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/fibonacciclientproxy.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/fibonacciinvoker.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/MAPEKAnalyser.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/naminginvoker.go" />
+        <option value="$PROJECT_DIR$/src/framework/libraries/library.go" />
+        <option value="$PROJECT_DIR$/src/graph/execgraph/graph.go" />
+        <option value="$PROJECT_DIR$/src/framework/configuration/commands/commands.go" />
+        <option value="$PROJECT_DIR$/src/middlewareservices/naming/naming.go" />
+        <option value="$PROJECT_DIR$/src/verificationtools/fdr/fdr.go" />
+        <option value="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/planner.go" />
+        <option value="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/adaptationmanager.go" />
+        <option value="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/analyser.go" />
+        <option value="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/executor.go" />
+        <option value="$PROJECT_DIR$/src/executionenvironment/adaptationmanager/monitor.go" />
+        <option value="$PROJECT_DIR$/src/executionenvironment/versioninginjector/injector.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/namingclientproxy/namingclientproxy.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/correctiveMonitor.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/crh.go" />
+        <option value="$PROJECT_DIR$/src/framework/configuration/configuration/configuration.go" />
+        <option value="$PROJECT_DIR$/src/framework/configuration/attachments/attachment.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/calculatorclientproxy.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/calculatorinvoker.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/evolutiveMonitor.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/MAPEKExecutor.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/MAPEKMonitor.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/MAPEKPlanner.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/notificationconsumer.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/notificationengine.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/notificationengineclientproxy.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/notificationengineinvoker.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/proactivemonitor.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/receiver.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/requestor.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/sender.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/srh.go" />
+        <option value="$PROJECT_DIR$/src/framework/components/subscriptionmanager.go" />
+        <option value="$PROJECT_DIR$/src/framework/proxy/proxylibrary.go" />
+        <option value="$PROJECT_DIR$/src/shared/factories/factories.go" />
+        <option value="$PROJECT_DIR$/src/shared/Handlers/handlernotify.go" />
+        <option value="$PROJECT_DIR$/src/apps/fibonacci/main/fibonacciclient.go" />
+        <option value="$PROJECT_DIR$/src/transport/goRPC/http/fibonacciclient.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-1" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>GeneralGo</id>
+          </State>
+          <State>
+            <id>Go</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>GoBinaryAndUnaryExpressionTypesCompatibility</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="midarch-go-v11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="midarch-go-v11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="midarch-go-v11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="midarch-go-v11" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../midarch-go" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/cspspecs/SenderReceiver" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/cspspecs/SenderReceiver" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build fibonacciclient.go">
+    <configuration name="go build element.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="software-architecture-v9" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/framework/element/element.go" />
+      <package value="midarch-go-v11" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build fibonacciclient.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="software-architecture-v9" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <parameters value="REQUEST_TIME=0 NAMING_HOST=192.168.1.9 SAMPLE_SIZE=10" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/apps/fibonacci/main/fibonacciclient.go" />
+      <package value="midarch-go-v11" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build fibonacciserver.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="software-architecture-v9" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <parameters value="NAMING_HOST=192.168.1.9 STRATEGY=0" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/apps/fibonacci/main/fibonacciserver.go" />
+      <package value="midarch-go-v11" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="software-architecture-v9" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <parameters value="STRATEGY=4 MONITOR_TIME=5 INJECTION_TIME=5" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/apps/senderreceiver/main/main.go" />
+      <package value="midarch-go-v11" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build namingserver.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="software-architecture-v9" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/transport/myRPC/services/naming/namingserver.go" />
+      <package value="midarch-go-v11" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build namingserver.go" />
+      <item itemvalue="Go Build.go build fibonacciserver.go" />
+      <item itemvalue="Go Build.go build fibonacciclient.go" />
+      <item itemvalue="Go Build.go build element.go" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build fibonacciclient.go" />
+        <item itemvalue="Go Build.go build fibonacciserver.go" />
+        <item itemvalue="Go Build.go build namingserver.go" />
+        <item itemvalue="Go Build.go build element.go" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29615796" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/framework/components/fibonacciclientproxy.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/MAPEKAnalyser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/MAPEKExecutor.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/MAPEKMonitor.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/MAPEKPlanner.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/naminginvoker.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/notificationconsumer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/notificationengine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/notificationengineclientproxy.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/notificationengineinvoker.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/proactivemonitor.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/receiver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/requestor.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/sender.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/srh.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/components/subscriptionmanager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/configuration/attachments/attachment.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/configuration/commands/commands.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/configuration/configuration/configuration.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4650">
+          <caret line="310" column="26" selection-start-line="310" selection-start-column="26" selection-end-line="310" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/connectors/oneton.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/connectors/oneway.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/connectors/requestreply.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/connectors/threetoone.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/connectors/twotoone.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/element/element.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/element/ior.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/libraries/library.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/messages/invocation.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/messages/miop.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/proxy/proxylibrary.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/execgraph/graph.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/fdrgraph/graph.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewareservices/naming/naming.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugins/fibonacciinvoker01/fibonacciinvoker01.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/errors/erros.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apps/mapek/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugins/fibonacciinvoker02/fibonacciinvoker02.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/factories/factories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/Handlers/handlernotify.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/net/netshared.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/parameters/parameters.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/verificationtools/fdr/fdr.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transport/grpc/fibonacci/fibonacci/fibonacci.proto">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transport/myRPC/services/naming/namingserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#14#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apps/fibonacci/main/fibonacciclient.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transport/goRPC/http/fibonacciserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/shared/shared.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3600">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
+          <folding>
+            <element signature="e#16#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transport/grpc/fibonacci/compileproto">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transport/grpc/fibonacci/server/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apps/fibonacci/main/fibonacciserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transport/goRPC/http/fibonacciclient.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#14#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

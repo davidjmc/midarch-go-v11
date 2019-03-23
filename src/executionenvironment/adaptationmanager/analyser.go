@@ -1,9 +1,16 @@
 package adaptationmanager
 
 import (
+	"bytes"
+	"fmt"
+	"io/ioutil"
 	"framework/configuration/configuration"
-	"shared/shared"
 	"shared/parameters"
+	"shared/shared"
+	"net/http"
+	"strconv"
+	"strings"
+	"unicode"
 )
 
 type Analyser struct{}
@@ -48,12 +55,16 @@ func correctiveAnalysis(chanMa chan shared.MonitoredCorrectiveData, chanCorrecti
 	}
 }
 
-func proactiveAnalysis(chanMa chan shared.MonitoredProactiveData, chanProactive chan shared.AnalysisResult) { // TODO
+func proactiveAnalysis(chanMa chan shared.MonitoredProactiveData, chanProactive chan shared.AnalysisResult) {
+	analysisResult := shared.AnalysisResult{}
+
 	for {
 		monitoredData := <-chanMa
 		r := invokePRISM(monitoredData)
 		if r {
-			chanProactive <- shared.AnalysisResult{Analysis: parameters.NO_CHANGE}
+			analysisResult.Result = "TODO"
+			analysisResult.Analysis = parameters.PROACTIVE_CHANGE
+			chanProactive <- analysisResult
 		}
 	}
 }
@@ -75,6 +86,29 @@ func invokePROM(data shared.MonitoredCorrectiveData) bool {
 }
 
 func invokePRISM(data shared.MonitoredProactiveData) bool {
-	// TODO
-	return false
+
+	// request
+	req,_:= http.NewRequest("POST", "http://localhost:8080/ProactiveChecker/service/postchecker", bytes.NewBuffer(data))
+	req.Header.Set("Content-Type", "application/json")
+	client := &http.Client{}
+
+	// response
+	resp,_ := client.Do(req)
+	body,_ := ioutil.ReadAll(resp.Body)
+
+	words := strings.Split(string(body), ":")
+
+	atr := strings.TrimFunc(words[0], func(r rune) bool {
+		return !unicode.IsLetter(r) && !unicode.IsNumber(r)
+	})
+
+	value := strings.TrimFunc(words[1], func(r rune) bool {
+		return !unicode.IsLetter(r) && !unicode.IsNumber(r)
+	})
+
+	prismResult,_ := strconv.ParseBool(value)
+
+	fmt.Println(atr + " " + value)
+
+	return prismResult
 }

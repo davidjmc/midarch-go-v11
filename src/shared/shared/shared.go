@@ -32,7 +32,7 @@ type Invocation struct {
 // MAPE-K Types
 type MonitoredCorrectiveData string   // used in channel Monitor -> Analyser (Corrective)
 type MonitoredEvolutiveData []string  // used in channel Monitor -> Analyser (Evolutive)
-type MonitoredProactiveData [] string // used in channel Monitor -> Analyser (Proactive)
+type MonitoredProactiveData [] byte // used in channel Monitor -> Analyser (Proactive)
 
 type AnalysisResult struct {
 	Result   interface{}

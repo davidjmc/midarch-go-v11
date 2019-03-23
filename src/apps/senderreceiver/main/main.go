@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"executionenvironment/executionenvironment"
+	"midarch-go-v11/src/executionenvironment/executionenvironment"
 )
 
 func main() {
@@ -12,3 +12,4 @@ func main() {
 
 	fmt.Scanln()
 }
+

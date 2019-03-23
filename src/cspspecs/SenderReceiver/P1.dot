@@ -1,0 +1,32 @@
+digraph P1 {
+0 -> 1 [ label="I_PreInvR1" ];
+1 -> 2 [ label="InvR.t1" ];
+2 -> 3 [ label="I_PreInvR1" ];
+3 -> 4 [ label="InvP.t1" ];
+4 -> 5 [ label="InvR.t1" ];
+5 -> 6 [ label="I_PreInvR1" ];
+6 -> 3 [ label="I_PosInvP" ];
+5 -> 6 [ label="I_PreInvR2" ];
+5 -> 2 [ label="I_PosInvP" ];
+4 -> 1 [ label="I_PosInvP" ];
+2 -> 3 [ label="I_PreInvR2" ];
+2 -> 7 [ label="InvP.t1" ];
+7 -> 4 [ label="I_PreInvR1" ];
+7 -> 4 [ label="I_PreInvR2" ];
+7 -> 0 [ label="I_PosInvP" ];
+0 -> 1 [ label="I_PreInvR2" ];
+1 -> 2 [ label="InvR.t1" ];
+2 -> 3 [ label="I_PreInvR1" ];
+3 -> 4 [ label="InvP.t1" ];
+4 -> 5 [ label="InvR.t1" ];
+5 -> 6 [ label="I_PreInvR1" ];
+6 -> 3 [ label="I_PosInvP" ];
+5 -> 6 [ label="I_PreInvR2" ];
+5 -> 2 [ label="I_PosInvP" ];
+4 -> 1 [ label="I_PosInvP" ];
+2 -> 3 [ label="I_PreInvR2" ];
+2 -> 7 [ label="InvP.t1" ];
+7 -> 4 [ label="I_PreInvR1" ];
+7 -> 4 [ label="I_PreInvR2" ];
+7 -> 0 [ label="I_PosInvP" ];
+}

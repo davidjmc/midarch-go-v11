@@ -1,10 +1,10 @@
-digraph G {
-  0 -> 1 [ label="InvP.namingproxy" ];
-  0 -> 2 [ label="InvP.fibonacciproxy" ];
-  1 -> 5 [ label="InvR.requestor" ];
-  2 -> 3 [ label="InvR.requestor" ];
-  3 -> 4 [ label="TerR.requestor" ];
-  4 -> 0 [ label="TerP.fibonacciproxy" ];
-  5 -> 6 [ label="TerR.requestor" ];
-  6 -> 0 [ label="TerP.namingproxy" ];
+digraph T1 {
+0 -> 1 [ label="InvP.namingproxy" ];
+1 -> 2 [ label="InvR.requestor" ];
+2 -> 3 [ label="TerR.requestor" ];
+3 -> 0 [ label="TerP.namingproxy" ];
+0 -> 4 [ label="InvP.fibonacciproxy" ];
+4 -> 5 [ label="InvR.requestor" ];
+5 -> 6 [ label="TerR.requestor" ];
+6 -> 0 [ label="TerP.fibonacciproxy" ];
 }
